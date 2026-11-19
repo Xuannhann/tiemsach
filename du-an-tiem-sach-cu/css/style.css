@@ -1,0 +1,329 @@
+/* ===== 1. Biến màu & Reset ===== */
+:root {
+    --bg-page: #f5efe6;
+    --bg-surface: #ffffff;
+    --primary: #6b4226;
+    --primary-hover: #4e2f1a;
+    --accent: #c88d4b;
+    --text-main: #2b211a;
+    --text-muted: #6a5d52;
+    --border-color: #dfd3c3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    color: var(--text-main);
+    background-color: var(--bg-page);
+    max-width: 860px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(43, 33, 26, 0.08);
+}
+
+/* ===== 2. Header, Logo & Menu ===== */
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+
+header h1 {
+    color: var(--primary);
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+nav {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+/* ===== 3. Khung ảnh Figure ===== */
+.featured-books {
+    text-align: center;
+    background-color: #fbf8f3;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.featured-books figcaption {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.featured-books img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+/* ===== 4. Nội dung Main ===== */
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 24px 0;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
+
+h3 {
+    color: var(--primary-hover);
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+aside {
+    background-color: #fbf8f3;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-top: 14px;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+details p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ===== 5. Bảng danh mục sách ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+caption {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+tbody th {
+    background-color: #f8f2e9;
+    color: var(--primary-hover);
+}
+
+tfoot td {
+    background-color: #f2e8da;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ===== 6. Danh sách giờ mở cửa ===== */
+.hours-list {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 10px 16px;
+    background-color: #fbf8f3;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.hours-list dt {
+    font-weight: 700;
+    color: var(--primary-hover);
+}
+
+/* ===== 7. Biểu mẫu Liên hệ ===== */
+.contact-form fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+.contact-form legend {
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #fffdfa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: var(--primary);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 9px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: #e4dacd;
+    color: var(--text-main);
+}
+
+.store-address {
+    font-style: normal;
+    background-color: #fbf8f3;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.store-address a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* ===== 8. Liên kết đầu trang & Footer ===== */
+.back-to-top {
+    margin-top: 18px;
+    text-align: right;
+}
+
+.back-to-top a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding: 16px;
+    }
+
+    .hours-list {
+        grid-template-columns: 1fr;
+    }
+}

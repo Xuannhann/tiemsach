@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tiệm Sách Cũ Tri Thức">
+    <meta name="description" content="Gửi thông tin liên hệ để đặt mua hoặc bán lại sách cũ.">
+    <title>Liên hệ - Tiệm Sách Cũ Tri Thức</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="dau-trang">
+        <h1>Liên hệ với chúng tôi</h1>
+        <nav aria-label="Điều hướng chính">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="index.html#danh-muc-sach">Các loại sách</a></li>
+                <li><a href="thoiGianMoCua.html">Thời gian mở cửa</a></li>
+            </ul>
+        </nav>
+
+        <figure class="banner">
+            <img src="../img/ke-sach-cu.jpg" alt="Kệ sách cũ được sắp xếp ngăn nắp tại cửa hàng" width="800" height="450">
+            <figcaption>Liên hệ nhanh để tìm đầu sách hiếm hoặc gửi danh sách sách cần bán</figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <section>
+            <h2>Gửi yêu cầu mua / bán sách cũ</h2>
+            <form action="https://httpbin.org/post" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Thông tin liên hệ</legend>
+
+                    <p class="form-group">
+                        <label for="ho-ten">Họ và tên:</label>
+                        <input type="text" name="hoTen" id="ho-ten" placeholder="Nhập họ tên của bạn" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="dien-thoai">Số điện thoại:</label>
+                        <input type="tel" name="dienThoai" id="dien-thoai" placeholder="09xx xxx xxx" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="nhu-cau">Nhu cầu:</label>
+                        <select name="nhuCau" id="nhu-cau">
+                            <option value="mua-sach">Tìm mua sách cũ</option>
+                            <option value="ban-sach">Bán lại sách cũ</option>
+                            <option value="trao-doi">Trao đổi sách</option>
+                            <option value="khac">Yêu cầu khác</option>
+                        </select>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="noi-dung">Nội dung chi tiết (tên sách, số lượng, tình trạng):</label>
+                        <textarea name="noiDung" id="noi-dung" rows="6" placeholder="Nhập tên các cuốn sách bạn muốn mua hoặc bán..." required></textarea>
+                    </p>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Gửi thông tin</button>
+                    <button type="reset" class="btn-secondary">Nhập lại</button>
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Địa chỉ tiệm sách</h2>
+            <address class="store-address">
+                <p><strong>Tiệm Sách Cũ Tri Thức</strong></p>
+                <p>Số 15, Đường Thông Thiên Học, TP. Đà Lạt, Lâm Đồng</p>
+                <p>Điện thoại: <a href="tel:+84901234567">0901 234 567</a></p>
+                <p>Email: <a href="mailto:tiemsachcutrithuc@example.com">tiemsachcutrithuc@example.com</a></p>
+            </address>
+
+            <p class="back-to-top">
+                <a href="#dau-trang">&#8593; Trở về đầu trang</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bản quyền &copy; 2026 Tiệm Sách Cũ Tri Thức.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cu Tèo">
+    <meta name="description" content="Thông tin liên hệ mua bán sách cũ tại tiệm sách cũ Cu Tèo">
+    <title>Liên hệ - Tiệm sách cũ Cu Tèo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="dau-trang">
+        <div class="brand-header">
+            <img src="../img/images.jpg" alt="Logo tiệm sách cũ Cu Tèo" width="300" height="240" class="logo">
+            <h1>Liên hệ với Tiệm sách cũ Cu Tèo</h1>
+        </div>
+
+        <nav aria-label="Điều hướng chính">
+            <ul>
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="index.html#gt-ve-tiem-sach">Giới thiệu về tiệm sách</a>
+                </li>
+                <li>
+                    <a href="index.html#danh-muc-sach">Các loại sách đang bán</a>
+                </li>
+                <li>
+                    <a href="thoiGianMoCua.html">Thời gian mở cửa</a>
+                </li>
+            </ul>
+        </nav>
+
+        <figure class="featured-books">
+            <figcaption>Nhận thu mua và trao đổi sách cũ giá tốt</figcaption>
+            <img src="../img/images.jpg" alt="Kệ sách tại tiệm sách cũ Cu Tèo" title="Liên hệ tiệm sách cũ" width="373" height="183">
+        </figure>
+    </header>
+
+    <hr>
+
+    <main><!-- main -->
+        <section>
+            <h2>Gửi thông tin liên hệ</h2>
+            <form action="https://httpbin.org/get" method="get" class="contact-form">
+                <fieldset>
+                    <legend>Gửi tin nhắn cho chúng tôi</legend>
+
+                    <p class="form-group">
+                        <label for="ten">Tên:</label>
+                        <input type="text" name="ten" id="ten" placeholder="Nhập tên của bạn" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Nhập email của bạn" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="loi-nhan">Lời nhắn (sách cần mua hoặc bán):</label>
+                        <textarea name="loiNhan" id="loi-nhan" cols="30" rows="8" placeholder="Nhập nội dung lời nhắn tại đây..." required></textarea>
+                    </p>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Gửi</button>
+                    <button type="reset" class="btn-secondary">Xóa</button>
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Địa chỉ của tiệm</h2>
+            <address class="store-address">
+                123 Đường Phù Đổng Thiên Vương<br>
+                TP. Đà Lạt, Tỉnh Lâm Đồng<br><br>
+                Điện thoại: <a href="tel:+84912345678">0912-345-678</a>
+            </address>
+
+            <p class="back-to-top">
+                <a href="#">&#8593; Về đầu trang</a>
+            </p>
+        </section>
+    </main><!-- end main -->
+
+    <hr>
+
+    <footer>
+        <p>Bản quyền &copy; Tiệm sách cũ Cu Tèo</p>
+    </footer>
+</body>
+</html>
